@@ -6,9 +6,11 @@
   "instances": 1,
   "container": {
     "docker": {
-      "image": "ntxvm016.iccluster.epfl.ch:5000/pup",
+      "image": "houshuang/pup",
       "forcePullImage": true
     },
-    "type": "MESOS"
-  }
+    "type": "MESOS",
+    "restartPolicy": "never"
+  },
+    "restartPolicy": "never"
 }

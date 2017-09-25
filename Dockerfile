@@ -6,4 +6,4 @@ WORKDIR /pup
 COPY package.json yarn.lock ./
 RUN yarn
 COPY script.sh index.js  ./
-CMD ['node', 'index.js']
+CMD ["node", "index.js"]

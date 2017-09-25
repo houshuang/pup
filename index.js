@@ -28,13 +28,9 @@ var now = require('performance-now');
     },
     method: 'POST',
     body: JSON.stringify({ host: id, msg: '' + (t1 - t0) })
-  })
-    .then(function(res) {
-      console.log(res);
-    })
-    .catch(function(res) {
-      console.log(res);
-    });
+  }).catch(function(res) {
+    console.log(res);
+  });
 
   browser.close();
 })();
