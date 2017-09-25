@@ -1,0 +1,32 @@
+{
+  "cmd": "/launch caperez container-iccluster /containerdata1/caperez/random.sh ",
+  "cpus": 1,
+  "mem": 128,
+  "disk": 1024,
+  "instances": 1,
+  "container": {
+    "docker": {
+      "image": "ntxvm016.iccluster.epfl.ch:5000/icit-ubuntu",
+      "forcePullImage": true
+    },
+    "type": "MESOS"
+  },
+  "portDefinitions": [
+    {
+      "port": 0,
+      "protocol": "tcp",
+      "name": "tfboard",
+      "labels": null
+    },{
+      "port": 0,
+      "protocol": "tcp",
+      "name": "jupyter",
+      "labels": null
+    },{
+      "port": 0,
+      "protocol": "tcp",
+      "name": "sshd",
+      "labels": null
+    }
+  ]
+}

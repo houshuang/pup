@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pupA
+spec:
+  containers:
+    - name: pupA
+      image: houshuang/pup
+      command:
+        - sleep
+        - infinity
+      restartPolicy: never
+

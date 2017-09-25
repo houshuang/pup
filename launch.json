@@ -1,0 +1,14 @@
+{
+  "cmd": "/launch haklev  container-iccluster /pup/script.sh",
+  "cpus": 0.5,
+  "mem": 64,
+  "disk": 100,
+  "instances": 1,
+  "container": {
+    "docker": {
+      "image": "ntxvm016.iccluster.epfl.ch:5000/pup",
+      "forcePullImage": true
+    },
+    "type": "MESOS"
+  }
+}
